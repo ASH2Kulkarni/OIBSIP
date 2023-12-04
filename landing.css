@@ -1,0 +1,267 @@
+/* Add a black background color to the top navigation */
+*{
+  margin: 0;
+  
+}
+
+.topnav {
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 25px 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  margin: 5px 2px;
+  border-radius: 7px;
+}
+.main{
+  position: relative;
+	width: 100%;
+	
+}
+.fig{
+  position: relative; /* set container to a relative position */
+  width: 100%; /* set your desired width */
+  height: 100%;
+  
+}
+.getStart{
+  position: absolute; /* set button to an absolute position */
+  font-weight: 600;
+  left: 10%;
+  top: 65%;
+  right: 70%;
+  
+
+  z-index: 2;
+  background-color: #007bff; 
+  color: #fff; /* set your desired text color */
+  border: none; /* remove button border */
+  padding: 10px 20px; /* set your desired padding */
+  cursor: pointer; 
+  border-radius: 5px;
+}
+.getStart:hover,#try:hover, #start:hover{
+ background-color: #62a9f5;
+ color: black;
+}
+
+
+.topnav img{
+  width: 150px;
+}
+
+.details{
+ 
+  display: flex;
+justify-content:space-between;
+margin-top:50px;
+ 
+}
+
+#girl{
+  height: 100%;
+  position: relative;
+  width: 100%;
+ border-radius: 10px;
+ margin-left: 100px;
+ 
+ 
+}
+.benefits{
+  font-size:1vw;
+ margin-left:120px;
+ margin-right: 70px; 
+ 
+}
+#try,#start{
+  background-color: #007bff; 
+  border: none;
+  margin: 30px;
+  width: 200px;
+  height: 50px;
+  font-weight: 600;
+  color: #fff; /* set your desired text color */  border: none; /* remove button border */
+  padding: 10px 20px; /* set your desired padding */
+  cursor: pointer; 
+  border-radius: 5px;
+}
+li{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li:hover{
+  color: black;
+}
+footer{
+
+  
+  background-color: grey;
+  margin:0px;
+  border-radius:5px;
+ padding-top: 10px;
+ font-size: 2vh;
+display: flex;
+justify-content: center;
+align-items: center;
+  color:white ;
+  
+}
+th,td{
+  width: 500px;
+  height: 40px;
+  text-align: left;
+  color: white;
+ 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+table{
+margin: 50px;
+}
+.rewiev{
+ 
+  font-size:1vw;
+  margin: 5%;
+  color: rgb(36, 35, 35);
+  padding: 20px;
+  
+}
+
+.rewievImages{
+
+  height: 100%;
+  position: relative;
+  width: 100%;
+ border-radius: 10px;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  
+
+}
+.rewievImages div{
+
+  height: 200px;
+  width: 390px;
+  border-radius: 10px;
+  background: linear-gradient(155deg, rgb(62, 213, 236),#c455ede4);
+ padding: 5px 15px;
+ margin: 12px;
+}
+#name{
+  font-size: 2.6vh;
+ font-weight: 900;
+
+ color:black;
+
+
+}
+.review1,.review2,.review3{
+overflow: hidden;
+}
+.review1 p{
+  color: white;
+  font-weight:600;
+
+ 
+
+}
+.review2 p {
+  color: white;
+  font-weight:600;
+
+
+}
+.review3 p {
+  color:white;
+  font-weight:600;
+  
+
+}
+#description{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#copy{
+  line-height: 22px;
+  font-size: .9em;
+  bottom:0;
+
+  }
+ 
+
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .topnav a {
+    float: none; /* Remove float for stacking on small screens */
+    text-align: center;
+  }
+
+  .details {
+    flex-direction: column; /* Stack items on small screens */
+    align-items: center;
+  }
+
+  #girl {
+    margin-left: 0; /* Adjust margin for small screens */
+  }
+
+  .benefits {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+ #what{
+  text-align: center;
+ }
+  .rewievImages div {
+    width: 100%;
+  }
+  footer {
+    background-color: grey;
+    margin: 0px;
+    border-radius: 5px;
+    padding-top: 10px;
+    font-size: 15px;
+    color: white;
+  }
+  #name{
+    font-size: 1.7vh;
+   font-weight: 900;
+  
+   color:black;
+  
+  
+  }
+  #try{
+   
+    margin-left: 90px;
+   
+  }
+  #start{
+    margin-left: 40px;
+
+  }
+  .rewiev h1,.benefits h1{
+    font-size: 30px;
+  }
+  .benefits ul{
+    font-size: 13px;
+  }
+
+}
